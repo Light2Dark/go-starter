@@ -1,0 +1,6 @@
+**/tailwindcss
+*.env
+bin/*
+
+# excluded files here
+!.keep
