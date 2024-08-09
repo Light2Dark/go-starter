@@ -26,7 +26,7 @@ func Layout(children ...templ.Component) templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Go Template</title><link rel=\"stylesheet\" href=\"/static/css/output.css\"><script src=\"/static/htmx.min.js\"></script></head><body class=\"bg-green-100 h-screen\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Go Template</title><link rel=\"stylesheet\" href=\"/static/css/output.css\"><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/static/favicon_io/apple-touch-icon.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/static/favicon_io/favicon-32x32.png\"><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/static/favicon_io/favicon-16x16.png\"><link rel=\"manifest\" href=\"/static/favicon_io/site.webmanifest\"><script src=\"/static/htmx.min.js\"></script></head><body class=\"bg-green-100 h-screen\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
