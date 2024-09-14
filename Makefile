@@ -1,14 +1,20 @@
-update:
+setup-mac:
 	curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64
 	chmod +x tailwindcss-macos-arm64
 	mv tailwindcss-macos-arm64 static/css/tailwindcss
-	./static/css/tailwindcss init
 
 	curl -sL https://unpkg.com/htmx.org/dist/htmx.min.js > ./static/htmx.min.js
 
 setup:
+	curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.9/tailwindcss-linux-arm64
+	chmod +x tailwindcss-linux-arm64
+	mv tailwindcss-linux-arm64 static/css/tailwindcss
+
+	curl -sL https://unpkg.com/htmx.org/dist/htmx.min.js > ./static/htmx.min.js
+
 	go install github.com/bokwoon95/wgo@latest
 	go install github.com/a-h/templ/cmd/templ@latest
+	go mod download
 
 docker-setup:
 	curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.4.9/tailwindcss-linux-arm64

@@ -1,6 +1,7 @@
 **/tailwindcss
 *.env
 bin/*
+.vscode
 
 # excluded files here
 !.keep
