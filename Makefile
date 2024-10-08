@@ -4,6 +4,9 @@ setup-mac:
 	mv tailwindcss-macos-arm64 static/css/tailwindcss
 
 	curl -sL https://unpkg.com/htmx.org/dist/htmx.min.js > ./static/htmx.min.js
+	go install github.com/bokwoon95/wgo@latest
+	go install github.com/a-h/templ/cmd/templ@latest
+	go mod download
 
 setup:
 	curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64
