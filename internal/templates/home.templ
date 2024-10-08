@@ -1,9 +1,7 @@
 package templates
 
-import "github.com/Light2Dark/go-starter/internal/components"
-
 templ Home() {
-	@components.Layout(Hello("human"))
+	@Layout(Hello("human"))
 }
 
 templ Button(buttonLink string, buttonText string) {
